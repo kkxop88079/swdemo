@@ -32,11 +32,6 @@ init
 
 <template lang="pug">
 viewHeader
-viewNumber
-main
-  viewBanner
-  viewReserve
-  viewAward
-  viewPrecautions
+viewBanner
 viewFooter
 </template>

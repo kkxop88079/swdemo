@@ -8,104 +8,60 @@ import viewNumber from '../components/view-number/index.vue'
 
 
 <template>
-  <div>
-    <div class="w-full h-[1000px] bg-backimg bg-black bg-no-repeat bg-cover relative bg-center">
-      <div class="flex justify-center  absolute top-2/3 left-1/2 -translate-x-1/2 flex-wrap items-center -mt-24">
-        <a href="" class="mb-6">
-          <img src="../assets/m2_btn1.png" alt="">
-        </a>
-        <img src="../assets/m2_word01.png" alt="">
-      </div>
-      <!--底下三角形-->
-      <div class="absolute bottom-0 bg-repeat-x bg-topimg w-full h-10"></div>
+  <div class=" overflow-hidden">
+    <div class="h-[70vh] relative">
+        <div class="absolute bg-gradient-to-b from-black h-24 z-10">
+            <div class="flex w-screen items-center mt-6 mb-4">
+                <div class="w-4/5">
+                    <img src="../assets/logo.png" alt="" class="w-12 ml-3">
+                </div>
+                <div class="w-1/5 flex mr-4">
+               
+                </div>
+            </div>
+            <div class="flex w-3/4 text-white justify-between m-auto font-medium">
+                <div>最新上架</div>
+                <div>特色遊戲</div>
+                <div class="flex items-center">
+                    <p class="mr-1">遊戲類別</p>
+                    <img src="../assets/arrow.png" alt="" class="w-3 mr-3">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bg-gradient-to-t from-black h-auto bottom-0 w-screen pl-2">
+            <div class="flex w-screen items-center mt-6 mb-10 flex-col">
+                <div class="w-full">
+                    <h1 class="text-white md:text-xl text-5xl font-bold m-0 leading-tight mr-0 tracking-tighter">HUGEWIN88</h1>
+                </div>
+                <div class="flex flex-row w-full tracking-tighter">
+                    <div class="text-white  text-2xl font-bold m-0 leading-none md:leading-none mr-1">RELEASE YEAR</div>
+                    <div class="text-white  text-2xl font-bold m-0 leading-none md:leading-none">2022</div>
+                </div>
+            </div>
+            <div class="flex text-white justify-center m-auto mb-6 flex-col items-center w-4/5">
+                <div class="mb-4 text-lg">經典 • 3D風格 • 熱門排行</div>
+                <div class="flex items-center justify-between w-full font-normal text-sm">
+                    <div class="flex flex-col items-center justify-center">
+                        <div><img src="../assets/add.png" alt="" class="w-5"></div>
+                        <div>加入</div>
+                    </div>
+                    <div class="flex flex-row px-4 py-2 bg-[#D42F26] items-center rounded-md">
+                        <img src="../assets/play.png" alt="" class="w-4  mr-1">
+                        <div>立即遊玩</div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <div><img src="../assets/info.png" alt="" class="w-6"></div>
+                        <div>資訊</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <video src="../assets/background.mp4"  autoplay muted loop playsinline type="video/mp4"
+            class="object-cover w-full h-[70vh] -z-10" ></video>
+        </div>
     </div>
 
-    <div class="bg-whiteimg w-full h-[1000px] flex -mt-24">
-      <div class="w-2/3 mx-auto">
-        <!--swiper box-->
-        <swiper
-          :slides-per-view="5"
-          :space-between="20"
-          class="mySwiper"
-          >
-          <swiper-slide>
-            <img src="../assets/m2_img101.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../assets/m2_img102.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../assets/m2_img103.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../assets/m2_img104.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../assets/m2_img105.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../assets/m2_img106.png" alt="">
-          </swiper-slide>
-          <swiper-slide >
-            <img src="../assets/m2_img101.png" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="../assets/m2_img102.png" alt="">
-          </swiper-slide>
-          <swiper-slide >
-            <img src="../assets/m2_img103.png" alt="">
-          </swiper-slide>
-        </swiper>
-        <!--衝刺進度-->
-        <div class="flex justify-center pt-10 flex-col items-center">
-          <!--圖片-->
-          <div class="mb-8">
-            <img src="../assets/m2_word02.png" alt="" >
-          </div>
-          <!--數字-->
-          <viewNumber></viewNumber>
-          <!--欄位區域-->
-          <div class="mt-10 text-center">
-            <form class="w-full max-w-lg">
-              <div class="mb-2">只要輸入您的手機號碼就可以輕輕鬆鬆預約！</div>
-              <div class="flex flex-wrap -mx-3 mb-6 justify-between">
-                <div class="w-full md:w-2/5 px-3 mb-6 md:mb-0">
-                  <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                      <option>台灣+886</option>
-                      <option>台灣+886</option>
-                      <option>台灣+886</option>
-                    </select>
-                </div>
-                <div class="w-full md:w-3/5 px-3">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <!--欄位文字-->
-                  <div class="mb-2">有邀請碼嗎？（限定GPG新會員輸入）</div>
-                  <!--欄位區域-->
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
-                  <!--欄位文字-->
-                  <div class="flex items-start mb-6">
-                    <div class="flex items-center h-5 ">
-                      <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-full bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
-                    </div>
-                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">同意【隱私權宣告】及個人資料蒐集使用及接收獎勵簡訊</label>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <div class="mb-8">
-               <img src="../assets/m2_btn2.png" alt=""  class="w-2/3 m-auto">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-black w-full h-52 -mt-24 ">
-      <div class="bg-repeat-x bg-bottomimg w-full h-20 absolute"></div>
-    </div>
     
   </div>
 </template>

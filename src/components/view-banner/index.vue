@@ -1,52 +1,116 @@
-<script>
-export default {
-  name: 'viewBanner',
-}
-</script>
 
-<script setup>
-import { inject, ref } from 'vue'
 
-const info = inject('info')
-const init = inject('init')
-const input = ref('')
-const action = () => {
-  if (!input.value) return false
+<template >
+<div class=" overflow-hidden">
+  <div class="h-auto pt-6 pb-6 bg-black">
+    <div class="w-full bg-black h-auto">
+      <div class="ml-2 font-medium mb-6">
+        <div class="text-white mb-2">最新上架</div>
+        <swiper 
+            :slidesPerView="4"
+            :spaceBetween="6"
+            :loop="true"
+            :loopFillGroupWithBlank="true"
+            :pagination="{
+            clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper w-full h-auto"
+        >
+            <swiper-slide><img src="../../assets/01.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/02.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/03.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/04.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/05.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/06.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/07.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/08.png" alt=""></swiper-slide>
+        </swiper>
+      </div>
 
-  console.log(input.value)
+      <div class="ml-2 font-medium mb-6">
+        <div class="text-white mb-2">最新上架</div>
+        <swiper 
+            :slidesPerView="4"
+            :spaceBetween="6"
+            :loop="true"
+            :loopFillGroupWithBlank="true"
+            :pagination="{
+            clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper w-full h-auto"
+        >
+            <swiper-slide><img src="../../assets/08.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/07.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/06.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/05.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/04.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/03.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/02.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/01.png" alt=""></swiper-slide>
+        </swiper>
+      </div>
 
-  const taeget = input.value
-  localStorage.setItem('userToken', input.value)
-  init()
-}
+      <div class="ml-2 font-medium mb-6">
+        <div class="text-white mb-2">特色遊戲</div>
+        <swiper 
+            :slidesPerView="3"
+            :spaceBetween="6"
+            :loop="true"
+            :loopFillGroupWithBlank="true"
+            :pagination="{
+            clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper w-full h-auto"
+        >
+            <swiper-slide><img src="../../assets/s-1.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/s-2.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/s-3.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/s-4.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/s-5.png" alt=""></swiper-slide>
+        </swiper>
+      </div>
 
-</script>
+      <div class="ml-2 font-medium mb-6">
+        <div class="text-white mb-2">熱門排行</div>
+        <swiper 
+            :slidesPerView="3"
+            :spaceBetween="6"
+            :loop="true"
+            :loopFillGroupWithBlank="true"
+            :pagination="{
+            clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper w-full h-auto"
+        >
+            <swiper-slide><img src="../../assets/r-1.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/r-2.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/r-3.png" alt=""></swiper-slide>
+            <swiper-slide><img src="../../assets/r-4.png" alt=""></swiper-slide>
+        </swiper>
+      </div>
+    </div>
+  </div>
+</div>
+  
 
-<template lang="pug">
-.banner__wrap
-  .banner__container banner
-  .info__container
-    .info__title 會員資料區塊
-    .info__text {{ info }}
-    .info__content
-      input.info__input(
-        v-model="input"
-        :class="tw([\
-          'border',\
-          'p-1',\
-          'mr-3',\
-          'rounded-sm',\
-        ])"
-      )
-      button.info__button(
-        :class="tw([\
-          'bg-gradient-to-r',\
-          'from-green-300',\
-          'to-blue-500',\
-          'py-1',\
-          'px-3',\
-          'rounded-sm',\
-        ])"
-        @click="action"
-      ) 帶入TOKEN
 </template>
+
+<script>
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+
+  export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    
+  };
+</script>
