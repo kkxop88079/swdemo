@@ -176,6 +176,11 @@
     "@vue/compiler-dom" "3.2.33"
     "@vue/shared" "3.2.33"
 
+"@vue/devtools-api@^6.0.0":
+  "integrity" "sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ=="
+  "resolved" "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.1.4.tgz"
+  "version" "6.1.4"
+
 "@vue/eslint-config-prettier@^7.0.0":
   "integrity" "sha512-/CTc6ML3Wta1tCe1gUeO0EYnVXfo3nJXsIhZ8WJr3sov+cGASr6yuiibJTL6lmIBm7GobopToOuB3B6AWyV0Iw=="
   "resolved" "https://registry.npmjs.org/@vue/eslint-config-prettier/-/eslint-config-prettier-7.0.0.tgz"
@@ -2625,7 +2630,14 @@
     "lodash" "^4.17.21"
     "semver" "^7.3.5"
 
-"vue@^3.2.25", "vue@^3.2.33", "vue@3.2.33":
+"vue-router@^4.0.15":
+  "integrity" "sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg=="
+  "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.15.tgz"
+  "version" "4.0.15"
+  dependencies:
+    "@vue/devtools-api" "^6.0.0"
+
+"vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.33", "vue@3.2.33":
   "integrity" "sha512-si1ExAlDUrLSIg/V7D/GgA4twJwfsfgG+t9w10z38HhL/HA07132pUQ2KuwAo8qbCyMJ9e6OqrmWrOCr+jW7ZQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.33.tgz"
   "version" "3.2.33"

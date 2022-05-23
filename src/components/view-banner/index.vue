@@ -4,6 +4,29 @@
 <div class=" overflow-hidden">
   <div class="h-auto pt-6 pb-6 bg-black">
     <div class="w-full bg-black h-auto">
+      <!----->
+    <div class="ml-2 font-medium mb-6">
+        <div class="text-white mb-2">最新上架測試連結</div>
+        <swiper 
+            :slidesPerView="4"
+            :spaceBetween="6"
+            :loop="true"
+            :loopFillGroupWithBlank="true"
+            :pagination="{
+            clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper w-full h-auto"
+        >
+            <swiper-slide v-for="item of list_new" :key="item.id">
+                    <img :src="item.url" :alt="item.alt">
+            </swiper-slide>
+
+        </swiper>
+      </div>
+
+
+      <!------>
       <div class="ml-2 font-medium mb-6">
         <div class="text-white mb-2">最新上架</div>
         <swiper 
@@ -102,6 +125,7 @@
 <script>
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
+  
 
   // Import Swiper styles
   import 'swiper/css';
@@ -112,4 +136,18 @@
       SwiperSlide,
     },
   };
+</script>
+
+<script setup>
+    import { ref } from 'vue'
+    const list_new = ref([
+        { id: 1, url: './src/assets/01.png', alt: '1'},
+        { id: 2, url: './src/assets/02.png', alt: '2' },
+        { id: 3, url: './src/assets/03.png', alt: '3' },
+        { id: 4, url: './src/assets/04.png', alt: '4' },
+        { id: 5, url: './src/assets/05.png', alt: '5' },
+        { id: 6, url: './src/assets/06.png', alt: '6' },
+        { id: 7, url: './src/assets/07.png', alt: '7' },
+        { id: 8, url: './src/assets/08.png', alt: '8' },
+    ])
 </script>
