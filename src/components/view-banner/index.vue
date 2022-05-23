@@ -1,6 +1,6 @@
 
 
-<template >
+<template>
 <div class=" overflow-hidden">
   <div class="h-auto pt-6 pb-6 bg-black">
     <div class="w-full bg-black h-auto">
@@ -111,6 +111,5 @@
       Swiper,
       SwiperSlide,
     },
-    
   };
 </script>
