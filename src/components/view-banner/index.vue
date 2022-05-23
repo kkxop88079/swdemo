@@ -29,7 +29,7 @@
       </div>
 
       <div class="ml-2 font-medium mb-6">
-        <div class="text-white mb-2">最新上架</div>
+        <div class="text-white mb-2">特色遊戲</div>
         <swiper 
             :slidesPerView="4"
             :spaceBetween="6"
@@ -53,7 +53,7 @@
       </div>
 
       <div class="ml-2 font-medium mb-6">
-        <div class="text-white mb-2">特色遊戲</div>
+        <div class="text-white mb-2">推薦遊戲</div>
         <swiper 
             :slidesPerView="3"
             :spaceBetween="6"
