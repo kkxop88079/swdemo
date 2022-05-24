@@ -30,8 +30,6 @@ init
 
 </script>
 
-<template lang="pug">
-viewHeader
-viewBanner
-viewFooter
+<template>
+  <router-view />
 </template>

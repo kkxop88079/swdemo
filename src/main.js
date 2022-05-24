@@ -10,3 +10,6 @@ createApp(App)
   .use(router)
   .mount('#app')
   
+  router.afterEach((to, from, next) => {
+    window.scrollTo(0, 0);
+  });

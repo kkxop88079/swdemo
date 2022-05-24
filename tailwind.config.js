@@ -10,6 +10,7 @@ module.exports = {
         'whiteimg': "url('/src/assets/m2_bg_sp100.jpg')",
         'topimg': "url('/src/assets/m2_bg_sp101.png')",
         'bottomimg': "url('/src/assets/m2_bg_sp102.png')",
+        'infoBG': "url('./src/assets/infoBG.png')",
       },
     },
   },
