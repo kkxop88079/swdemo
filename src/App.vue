@@ -31,5 +31,7 @@ init
 </script>
 
 <template>
-  <router-view />
+  <keep-alive exclude="string">
+    <router-view />
+  </keep-alive>  
 </template>

@@ -8,19 +8,6 @@ export default ({ mode }) => {
 
   return defineConfig({
     base: "./",
-    server: {
-      proxy: {
-        '/api': {
-          target: process.env.VITE_APP_API_URL,
-          changeOrigin: true,
-          pathRewrite: {
-            '^/api': '',
-          },
-        },
-      },
-      host: process.env.VITE_SERVER_HOST,
-      https: true,
-    },
     plugins: [vue()],
     resolve: {
       alias: {

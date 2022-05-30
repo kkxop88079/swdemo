@@ -4,7 +4,7 @@
       <div class="flex w-screen items-center pt-6 mb-4">
           <div class="w-4/5">
              <router-link :to="{ name: 'Home',  }">
-                <img src="../../assets/logo.png" class="w-12 ml-3">
+                <img :src="logo" class="w-12 ml-3">
               </router-link>
               <!-- <img src="../assets/logo.png" alt="" class="w-12 ml-3"> -->
           </div>
@@ -22,11 +22,8 @@
     </div>
     
     <div >
-      <div class="flex justify-end w-4/5 m-auto mb-3">
-        <button type="button" class="bg-green-900 text-white w-[50px] h-[50px]" v-on:click="change('is')">v005</button>
-      </div>
       <div class="w-4/5 m-auto h-[500px] mb-10">
-        <iframe src="https://6e619f18.hugewin302.com/games/8b7151bb" frameborder="no" class="object-cover w-full h-auto border-2 border-yellow-500 m-auto"></iframe>
+        <iframe src="https://6e619f18.hugewin302.com/games/b93c01aa" frameborder="no" class="object-cover w-full h-full border-2 border-yellow-500 m-auto"></iframe>
       </div>
     </div>
   </div>
@@ -34,7 +31,7 @@
     <div class="w-4/5 m-auto h-auto py-10">
       <div class="w-full bg-slate-800 h-12 flex items-center text-slate-500 mb-4">
         <div class="flex-1 text-center">遊戲名稱{{ $route.params.username }} </div>
-        <div class="flex-1 text-center text-slate-50">魔法學園</div>
+        <div class="flex-1 text-center text-slate-50">絕世神偷</div>
       </div>
       <div class="w-full bg-slate-900 h-12 flex items-center text-slate-500 mb-4">
         <div class="flex-1 text-center">遊戲類型</div>
@@ -89,7 +86,7 @@ const list_new = ref([
     { id: 18, img: usd, alt: '18' },
     { id: 19, img: vnd, alt: '19' },
 ])
-
+import logo from '../../assets/logo.png'
 import bnd from './images/bnd.png'
 import cad from './images/cad.png'
 import cny from './images/cny.png'

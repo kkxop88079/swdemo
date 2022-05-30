@@ -4,10 +4,10 @@ const config = {
   theme: {
     extend: {
       colors: {
-        bg: '#141414'
-      }
-    }
-  }
+        bg: '#141414',
+      },
+    },
+  },
 }
 
 setup(config)
