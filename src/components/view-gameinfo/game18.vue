@@ -22,7 +22,7 @@
     </div>
     
     <div >
-      <div class="w-4/5 m-auto h-[500px] mb-10">
+      <div class="w-4/5 m-auto h-[364px] mb-10">
         <iframe src="https://6e619f18.hugewin302.com/games/fb3af502" frameborder="no" class="object-cover w-full h-full border-2 border-yellow-500 m-auto"></iframe>
       </div>
     </div>

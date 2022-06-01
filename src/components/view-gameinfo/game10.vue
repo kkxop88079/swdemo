@@ -1,3 +1,4 @@
+
 <template>
   <div class="h-auto bg-black overflow-x-hidden bg-infoBG bg-repeat-y bg-cover">
     <div class="bg-gradient-to-b from-black h-24 z-10 mb-10">
@@ -22,7 +23,7 @@
     </div>
     
     <div >
-      <div class="w-4/5 m-auto h-[500px] mb-10">
+      <div class="w-4/5 m-auto h-[364px] mb-10">
         <iframe src="https://6e619f18.hugewin302.com/games/b93c01aa" frameborder="no" class="object-cover w-full h-full border-2 border-yellow-500 m-auto"></iframe>
       </div>
     </div>
@@ -87,6 +88,7 @@ const list_new = ref([
     { id: 19, img: vnd, alt: '19' },
 ])
 import logo from '../../assets/logo.png'
+
 import bnd from './images/bnd.png'
 import cad from './images/cad.png'
 import cny from './images/cny.png'

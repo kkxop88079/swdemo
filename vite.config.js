@@ -17,13 +17,13 @@ export default ({ mode }) => {
     build: {
       rollupOptions: {
         output: {
-        // 重点在这里哦
+        // 
           // entryFileNames: `assets/[name].${timestamp}.js`,
           // chunkFileNames: `assets/[name].${timestamp}.js`,
           // assetFileNames: `assets/[name].${timestamp}.[ext]`
-          entryFileNames: `assets/[name].js`,
-          chunkFileNames: `assets/[name].js`,
-          assetFileNames: `assets/[name].[ext]`,
+          entryFileNames: `assets/[name].${process.env.V103}.js`,
+          chunkFileNames: `assets/[name].${process.env.V103}.js`,
+          assetFileNames: `assets/[name].${process.env.V103}.[ext]`,
         },
       },
     },

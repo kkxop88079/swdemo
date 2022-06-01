@@ -1,3 +1,4 @@
+
 <template>
   <div class="h-auto bg-black overflow-x-hidden bg-infoBG bg-repeat-y bg-cover">
     <div class="bg-gradient-to-b from-black h-24 z-10 mb-10">
@@ -22,8 +23,8 @@
     </div>
     
     <div >
-      <div class="w-4/5 m-auto h-[500px] mb-10">
-        <iframe src="https://6e619f18.hugewin302.com/games/8b7151bb" frameborder="no" class="object-cover w-full h-full border-2 border-yellow-500 m-auto"></iframe>
+      <div class="w-4/5 m-auto h-[364px] mb-10">
+        <iframe src="https://6e619f18.hugewin302.com/games/8b7151bb" frameborder="no" class="object-cover w-full h-full border-2 border-yellow-500 flex justify-center"></iframe>
       </div>
     </div>
   </div>
@@ -58,8 +59,6 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 console.log(route.params.id)
-
-
 
 </script>
 

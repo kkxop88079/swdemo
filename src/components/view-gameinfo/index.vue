@@ -25,7 +25,7 @@
       <div class="flex justify-end w-4/5 m-auto mb-3">
         <button type="button" class="bg-green-900 text-white w-[50px] h-[50px]" v-on:click="change('is')">v005</button>
       </div>
-      <div class="w-4/5 m-auto h-[500px] mb-10">
+      <div class="w-4/5 m-auto h-[364px] mb-10">
         <iframe src="https://6e619f18.hugewin302.com/games/8b7151bb" frameborder="no" class="object-cover w-full h-auto border-2 border-yellow-500 m-auto"></iframe>
       </div>
     </div>
