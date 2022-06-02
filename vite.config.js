@@ -7,8 +7,7 @@ export default ({ mode }) => {
   process.env = {...process.env, ...loadEnv(mode, process.cwd())};
 
   return defineConfig({
-    publicPath: '/demo/',
-    base: "./",
+    base: mode === 'production' ? '/demo/' : '/',
     plugins: [vue()],
     resolve: {
       alias: {
