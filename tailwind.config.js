@@ -12,6 +12,9 @@ module.exports = {
         'bottomimg': "url('/src/assets/m2_bg_sp102.png')",
         'infoBG': "url('/src/assets/infoBG.png')",
       },
+      fontFamily: {
+        anton:["Anton", "sans-serif"],
+      },
     },
   },
   plugins: [],

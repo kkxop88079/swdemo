@@ -18,8 +18,8 @@ import { ref } from 'vue'
                 </div>
             </div>
             <div class="flex w-3/4 text-white justify-between m-auto font-medium">
-                <div>最新上架</div>
-                <div>特色遊戲</div>
+                <a href="#new"><div>最新上架</div></a>
+                <a href="#feature"><div>特色遊戲</div></a>
                 <div class="flex items-center">
                     <p class="mr-1">遊戲類別</p>
                     <img src="../assets/arrow.png" alt="" class="w-3 mr-3">
@@ -29,30 +29,24 @@ import { ref } from 'vue'
         <div class="absolute bg-gradient-to-t from-black h-auto bottom-0 w-screen pl-2 z-10">
             <div class="flex w-screen items-center mt-6 mb-10 flex-col">
                 <div class="w-full">
-                    <h1 class="text-white md:text-xl text-5xl font-bold m-0 leading-tight mr-0 tracking-tighter">HUGEWIN88</h1>
+                    <h1 class="text-white md:text-xl text-7xl m-0 leading-none mr-0 font-anton">HUGEWIN88</h1>
                 </div>
                 <div class="flex flex-row w-full tracking-tighter">
-                    <div class="text-white  text-2xl font-bold m-0 leading-none md:leading-none mr-1">RELEASE YEAR</div>
-                    <div class="text-white  text-2xl font-bold m-0 leading-none md:leading-none">2022</div>
+                    <div class="text-white  text-4xl  m-0 leading-none md:leading-none mr-1 font-anton">RELEASE YEAR</div>
+                    <div class="text-white  text-4xl  m-0 leading-none md:leading-none font-anton">2022</div>
                 </div>
             </div>
             <div class="flex text-white justify-center m-auto mb-6 flex-col items-center w-4/5 z-20">
                 <div class="mb-4 text-lg">經典 • 3D風格 • 熱門排行</div>
-                <div class="flex items-center justify-between w-full font-normal text-sm">
-                    <div class="flex flex-col items-center justify-center">
-                        <div><img src="../assets/add.png" alt="" class="w-5"></div>
-                        <div>加入</div>
-                    </div>
+                <div class="flex items-center justify-center w-full font-normal text-sm">
+                    
                     <router-link :to="{ name: 'Game15', }">
                         <div class="flex flex-row px-4 py-2 bg-[#D42F26] items-center rounded-md">
                             <img src="../assets/play.png" alt="" class="w-4  mr-1">
                             <div>立即遊玩</div>
                         </div>
                     </router-link>
-                    <div class="flex flex-col items-center justify-center">
-                        <div><img src="../assets/info.png" alt="" class="w-6"></div>
-                        <div>資訊</div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -65,4 +59,7 @@ import { ref } from 'vue'
     
   </div>
 </template>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
 

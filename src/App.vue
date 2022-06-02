@@ -9,7 +9,7 @@ import viewPrecautions from './components/view-precautions.vue'
 import viewFooter from './components/view-footer/index.vue'
 import viewNumber from './components/view-number/index.vue'
 
-import { getMemberInfo } from './api'
+
 
 const info = ref({})
 provide('info', info)

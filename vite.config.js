@@ -7,6 +7,7 @@ export default ({ mode }) => {
   process.env = {...process.env, ...loadEnv(mode, process.cwd())};
 
   return defineConfig({
+    publicPath: '/demo/',
     base: "./",
     plugins: [vue()],
     resolve: {
@@ -21,9 +22,9 @@ export default ({ mode }) => {
           // entryFileNames: `assets/[name].${timestamp}.js`,
           // chunkFileNames: `assets/[name].${timestamp}.js`,
           // assetFileNames: `assets/[name].${timestamp}.[ext]`
-          entryFileNames: `assets/[name].${process.env.V103}.js`,
-          chunkFileNames: `assets/[name].${process.env.V103}.js`,
-          assetFileNames: `assets/[name].${process.env.V103}.[ext]`,
+          entryFileNames: `assets/[name].${process.env.V104}.js`,
+          chunkFileNames: `assets/[name].${process.env.V104}.js`,
+          assetFileNames: `assets/[name].${process.env.V104}.[ext]`,
         },
       },
     },
